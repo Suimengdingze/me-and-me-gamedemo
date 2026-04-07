@@ -1,0 +1,150 @@
+[gd_scene format=3 uid="uid://qwjikc34uxwu"]
+
+[ext_resource type="Texture2D" uid="uid://ck2hp0k304xqj" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_右起步1.png" id="1_58qyr"]
+[ext_resource type="Texture2D" uid="uid://cuu2nt2vhmf5c" path="res://character/xucun/idle/ef210db9-5010-4f3a-b59d-bc84339dc206.png" id="1_gpf63"]
+[ext_resource type="Script" path="res://scripts:/charactermove/character_body_2d.gd" id="1_l3723"]
+[ext_resource type="Texture2D" uid="uid://3viayh3yduq3" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_右2.png" id="2_gpf63"]
+[ext_resource type="Texture2D" uid="uid://bcit1fi20b1q3" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_右3.png" id="3_l3723"]
+[ext_resource type="Texture2D" uid="uid://df0ntvoakltqf" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_右4.png" id="4_84lcy"]
+[ext_resource type="Texture2D" uid="uid://beene3q27ldfm" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_右5.png" id="5_o2v0i"]
+[ext_resource type="Texture2D" uid="uid://bkju81morkekd" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_右6.png" id="6_0h5al"]
+[ext_resource type="Texture2D" uid="uid://df8dle8x6ivyu" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_右7.png" id="7_hok57"]
+[ext_resource type="Texture2D" uid="uid://d2n5lyx3xrivn" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_右8.png" id="8_mie4n"]
+[ext_resource type="Texture2D" uid="uid://dgqgsfyhqbgo4" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_右9.png" id="9_40hn8"]
+[ext_resource type="Texture2D" uid="uid://7unw0fpmninr" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_右10.png" id="10_dhj4h"]
+[ext_resource type="Texture2D" uid="uid://7wukn6vpcx17" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_右11.png" id="11_wdnq3"]
+[ext_resource type="Texture2D" uid="uid://didl364w7g4a8" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_右12.png" id="12_xisdd"]
+[ext_resource type="Texture2D" uid="uid://bse4tp0uux6yf" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_右13.png" id="13_gp6et"]
+[ext_resource type="Texture2D" uid="uid://c4incha86x4pk" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_左1.png" id="14_4rgph"]
+[ext_resource type="Texture2D" uid="uid://buk1g6dxilfb7" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_左2.png" id="15_mdvx0"]
+[ext_resource type="Texture2D" uid="uid://6rq2rppxx06w" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_左3.png" id="16_r7w44"]
+[ext_resource type="Texture2D" uid="uid://bjokgtepsvhyf" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_左4.png" id="17_lvit3"]
+[ext_resource type="Texture2D" uid="uid://cp6j1mlgw1n6p" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_左5.png" id="18_30ee4"]
+[ext_resource type="Texture2D" uid="uid://c70rdy15idtq1" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_左6.png" id="19_hujag"]
+[ext_resource type="Texture2D" uid="uid://dcm8q72g4sw6n" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_左7.png" id="20_ngcra"]
+[ext_resource type="Texture2D" uid="uid://bte0xym0ga5v" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_左8.png" id="21_0xnto"]
+[ext_resource type="Texture2D" uid="uid://diu0sn1yaae7i" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_左9.png" id="22_xvoha"]
+[ext_resource type="Texture2D" uid="uid://bbnh2krc05w1o" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_左10.png" id="23_081y5"]
+[ext_resource type="Texture2D" uid="uid://s7qgpodfjph6" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_左11.png" id="24_q56kt"]
+[ext_resource type="Texture2D" uid="uid://uu142jxwc4fo" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_左12.png" id="25_uvxvh"]
+[ext_resource type="Texture2D" uid="uid://cx7yvyhpdfqrm" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_左13.png" id="26_to7i4"]
+[ext_resource type="Texture2D" uid="uid://b0xsthim43v7x" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_左14.png" id="27_ulvu3"]
+[ext_resource type="Texture2D" uid="uid://ciyuj1egd0ahp" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_左15.png" id="28_mjx5o"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4frhi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gpf63")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_58qyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gpf63")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_l3723")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_84lcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_o2v0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_0h5al")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_hok57")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_mie4n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_40hn8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_dhj4h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_wdnq3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_xisdd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_gp6et")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_58qyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_4rgph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_mdvx0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_r7w44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_lvit3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_30ee4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_hujag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ngcra")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_0xnto")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_xvoha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_081y5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_q56kt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_uvxvh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_to7i4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_ulvu3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_mjx5o")
+}],
+"loop": true,
+"name": &"run",
+"speed": 20.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_58qyr"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1988952500]
+script = ExtResource("1_l3723")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=690806486]
+position = Vector2(-3, 3)
+sprite_frames = SubResource("SpriteFrames_4frhi")
+animation = &"idle"
+autoplay = "run"
+frame_progress = 0.45504594
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1150020757]
+shape = SubResource("RectangleShape2D_58qyr")
