@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cvjrngmurlxer"]
 
-[ext_resource type="PackedScene" path="res://scenes:/ground/character_body_2d.tscn" id="1_2mwya"]
+[ext_resource type="PackedScene" uid="uid://3lrwno5xxqaw" path="res://scenes/ground/character_body_2d.tscn" id="1_2mwya"]
 [ext_resource type="PackedScene" uid="uid://qwjikc34uxwu" path="res://character/xucun/character_body_2d.tscn" id="2_pyd5d"]
 
 [node name="text" type="Node2D" unique_id=286983093]
@@ -10,7 +10,7 @@ position = Vector2(-4477.0005, 34)
 scale = Vector2(16.49412, 1.604258)
 
 [node name="CharacterBody2D2" parent="." unique_id=1988952500 instance=ExtResource("2_pyd5d")]
-position = Vector2(272, -902)
+position = Vector2(-270, -879)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=605739409]
 scale = Vector2(7.000001, 1)

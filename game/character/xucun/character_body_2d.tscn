@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://ck2hp0k304xqj" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_右起步1.png" id="1_58qyr"]
 [ext_resource type="Texture2D" uid="uid://cuu2nt2vhmf5c" path="res://character/xucun/idle/ef210db9-5010-4f3a-b59d-bc84339dc206.png" id="1_gpf63"]
-[ext_resource type="Script" path="res://scripts:/charactermove/character_body_2d.gd" id="1_l3723"]
+[ext_resource type="Script" uid="uid://1k1mfminb6g8" path="res://scripts/charactermove/character_body_2d.gd" id="1_l3723"]
 [ext_resource type="Texture2D" uid="uid://3viayh3yduq3" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_右2.png" id="2_gpf63"]
 [ext_resource type="Texture2D" uid="uid://bcit1fi20b1q3" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_右3.png" id="3_l3723"]
 [ext_resource type="Texture2D" uid="uid://df0ntvoakltqf" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_右4.png" id="4_84lcy"]
@@ -30,6 +30,7 @@
 [ext_resource type="Texture2D" uid="uid://cx7yvyhpdfqrm" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_左13.png" id="26_to7i4"]
 [ext_resource type="Texture2D" uid="uid://b0xsthim43v7x" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_左14.png" id="27_ulvu3"]
 [ext_resource type="Texture2D" uid="uid://ciyuj1egd0ahp" path="res://character/xucun/remove bg(28) ai.imagesTool.com/1_左15.png" id="28_mjx5o"]
+
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4frhi"]
 animations = [{
