@@ -2,17 +2,25 @@
 
 [ext_resource type="PackedScene" uid="uid://3lrwno5xxqaw" path="res://scenes/ground/character_body_2d.tscn" id="1_2mwya"]
 [ext_resource type="PackedScene" uid="uid://qwjikc34uxwu" path="res://character/xucun/character_body_2d.tscn" id="2_pyd5d"]
+[ext_resource type="Texture2D" uid="uid://daixp6r0hb4i2" path="res://scenes/近景围栏.png" id="3_pyd5d"]
 
 [node name="text" type="Node2D" unique_id=286983093]
+position = Vector2(-10, 19)
 
 [node name="CharacterBody2D" parent="." unique_id=664564162 instance=ExtResource("1_2mwya")]
-position = Vector2(-4477.0005, 34)
+position = Vector2(-4591, -5)
 scale = Vector2(16.49412, 1.604258)
 
 [node name="CharacterBody2D2" parent="." unique_id=1988952500 instance=ExtResource("2_pyd5d")]
 position = Vector2(-270, -879)
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=605739409]
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D2" unique_id=605739409]
+position = Vector2(270, 879)
 scale = Vector2(7.000001, 1)
 offset = Vector2(0, -5.03)
 zoom = Vector2(0.1, 0.1)
+
+[node name="近景围栏" type="Sprite2D" parent="." unique_id=1770612794]
+position = Vector2(-356.99988, -229)
+scale = Vector2(7.5458984, 9.994623)
+texture = ExtResource("3_pyd5d")

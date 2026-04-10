@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://d3gr2ui11r4wj"]
+
+[ext_resource type="Texture2D" uid="uid://daixp6r0hb4i2" path="res://scenes/近景围栏.png" id="1_os0vb"]
+[ext_resource type="PackedScene" uid="uid://qwjikc34uxwu" path="res://character/xucun/character_body_2d.tscn" id="2_tkx3x"]
+
+[node name="Level01" type="Node2D" unique_id=1529841206]
+
+[node name="近景围栏" type="Sprite2D" parent="." unique_id=1150960911]
+position = Vector2(1790.0001, 668)
+scale = Vector2(0.67718524, 0.7288306)
+texture = ExtResource("1_os0vb")
+
+[node name="CharacterBody2D2" parent="." unique_id=1988952500 instance=ExtResource("2_tkx3x")]
+position = Vector2(2124, -981)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D2" unique_id=1436958653]
+position = Vector2(13, -6.9999847)
+scale = Vector2(0.67718524, 0.7288306)
