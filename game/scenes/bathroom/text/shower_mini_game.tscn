@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://c8hu5frvny7c0"]
+
+[ext_resource type="Texture2D" uid="uid://d377fqut6xm4b" path="res://scenes/bathroom/background/水底.png" id="1_7fa2t"]
+[ext_resource type="Script" uid="uid://cj4jxprerwauu" path="res://scenes/bathroom/scripts/shower_system.gd" id="1_mn0tt"]
+[ext_resource type="Script" uid="uid://ur7bpbrcdk6f" path="res://scenes/bathroom/scripts/shower_minigame.gd" id="1_vytyy"]
+[ext_resource type="Texture2D" uid="uid://be87n06qmo6o0" path="res://scenes/bathroom/ui/左水1.png" id="2_mn0tt"]
+[ext_resource type="Texture2D" uid="uid://dpye4x2dguxhk" path="res://scenes/bathroom/ui/右水.png" id="3_vytyy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7fa2t"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mn0tt"]
+radius = 88.4138
+
+[node name="ShowerMiniGame" type="Node2D" unique_id=2126693692]
+script = ExtResource("1_vytyy")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1271068608]
+texture = ExtResource("1_7fa2t")
+
+[node name="HotValve" type="Node2D" parent="." unique_id=1161152622]
+position = Vector2(-237, 83)
+
+[node name="Sprite2D" type="Sprite2D" parent="HotValve" unique_id=1244611709]
+position = Vector2(239, -73)
+texture = ExtResource("2_mn0tt")
+
+[node name="Area2D" type="Area2D" parent="HotValve" unique_id=985821699]
+position = Vector2(-239, 75)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HotValve/Area2D" unique_id=184574686]
+position = Vector2(238, -76)
+scale = Vector2(8.496456, 8.410471)
+shape = SubResource("CircleShape2D_7fa2t")
+
+[node name="ColdValve" type="Node2D" parent="." unique_id=949472159]
+position = Vector2(242, 70)
+
+[node name="Sprite2D" type="Sprite2D" parent="ColdValve" unique_id=1694743263]
+position = Vector2(-248, -80)
+texture = ExtResource("3_vytyy")
+
+[node name="Area2D" type="Area2D" parent="ColdValve" unique_id=1521272316]
+position = Vector2(-3, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColdValve/Area2D" unique_id=1923285325]
+position = Vector2(1, -1)
+shape = SubResource("CircleShape2D_mn0tt")
+
+[node name="ShowerSystem" type="Node" parent="." unique_id=377272929]
+script = ExtResource("1_mn0tt")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=284824237]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=555650016]
+
+[node name="UIRoot" type="Control" parent="CanvasLayer" unique_id=1150452492]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SteamOverlay" type="ColorRect" parent="CanvasLayer/UIRoot" unique_id=1783357891]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BubbleLabel" type="Label" parent="CanvasLayer/UIRoot/SteamOverlay" unique_id=806295919]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="DebugPanel" type="Panel" parent="CanvasLayer/UIRoot" unique_id=27000386]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SelectedLabel" type="Label" parent="CanvasLayer/UIRoot/DebugPanel" unique_id=485087011]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="TempLabel" type="Label" parent="CanvasLayer/UIRoot/DebugPanel" unique_id=186541925]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="FlowLabel" type="Label" parent="CanvasLayer/UIRoot/DebugPanel" unique_id=165850564]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="HintLabel" type="Label" parent="CanvasLayer/UIRoot/DebugPanel" unique_id=470494105]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/UIRoot/DebugPanel" unique_id=1442503681]
+layout_mode = 0
+offset_right = 4.0
+offset_bottom = 27.0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=491724958]
+zoom = Vector2(0.37, 0.37)
